@@ -1,92 +1,27 @@
 [
 {
-    "name": "Matahari",
+    "name": "Jumpstart",
     "method": "post",
-    "url": "https://matahari-backend-prod.marmeto.com/api/auth/re-activation",
-    "data": "{\"mobileCountryCode\": \"\", \"mobileNumber\": \"target_number\", \"activationCode\": \"\"}",
+    "url": "https://api.jumpstart.id/graphql",
+    "data": "{\"operationName\":\"CheckPhoneNoAndGenerateOtpIfNotExist\",\"variables\":{\"phoneNo\":\"target_number\",\"token\":null},\"query\":\"query CheckPhoneNoAndGenerateOtpIfNotExist($phoneNo: String!, $token: String) {\\\\n  checkPhoneNoAndGenerateOtpIfNotExist(phoneNo: $phoneNo, token: $token)\\\\n}\\\\n\"}",
     "headers": {
-        "Host": "matahari-backend-prod.marmeto.com",
+        "Host": "api.jumpstart.id",
         "accept": "*/*",
         "accept-encoding": "gzip, deflate, br, zstd",
         "accept-language": "en-US,en;q=0.9",
-        "content-length": "74",
+        "content-length": "1209",
         "content-type": "application/json",
-        "origin": "https://matahari.com",
-        "referer": "https://matahari.com/",
-        "sec-ch-ua": "\"Google Chrome\";v=\"135\", \"Not-A.Brand\";v=\"8\", \"Chromium\";v=\"135\"",
-        "sec-ch-ua-mobile": "?1",
-        "sec-ch-ua-platform": "\"Android\"",
-        "sec-fetch-dest": "empty",
-        "sec-fetch-mode": "cors",
-        "sec-fetch-site": "cross-site",
-        "user-agent": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Mobile Safari/537.36"
-    }
-},
-{
-        "name": "Volta",
-        "method": "post",
-        "url": "https://auth-production.voltaindonesia.com/v1/client/request-otp",
-        "data": "{\"phoneNumber\": \"target_number\"}",
-        "headers": {
-            "accept": "application/json, text/plain, */*",
-            "accept-encoding": "gzip, deflate, br, zstd",
-            "accept-language": "en-US,en;q=0.9,id;q=0.8",
-            "content-type": "application/json",
-            "origin": "https://voltaindonesia.com",
-            "referer": "https://voltaindonesia.com/",
-            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
-        }
-    },
-{
-        "name": "Pinhome",
-        "method": "post",
-        "url": "https://www.pinhome.id/api/pinaccount/request/otp",
-        "data": "{\"accountType\": \"customers\", \"countryCode\": \"62\", \"medium\": \"whatsapp\", \"otpType\": \"register\", \"phoneNumber\": \"target_number\"}",
-        "headers": {
-            "Host": "www.pinhome.id",
-            "accept": "application/json",
-            "accept-encoding": "gzip, deflate, br, zstd",
-            "accept-language": "id",
-            "authorization": "Bearer 13d2886acc908192d0c33325b44a617e5e3395481cc03cbfd67de34886399731",
-            "content-length": "115",
-            "content-type": "application/json",
-            "cookie": "_hhcftd=f3541e756a96c0f8fb72be550f91620f03bcfff8; active_language=id; utm_source=google; utm_medium=sem; utm_term=supply_brand; utm_content=pinhome; utm_campaign=primary_x_secondary_owner_conversion_listing_upload_pcw; _gcl_gs=2.1.k1$i1725276416; _gcl_au=1.1.1802820682.1725276418; _tt_enable_cookie=1; _ttp=aSNUKcyLO3fxojzHy1G7a1rep1q; _fbp=fb.1.1725276419401.43595963584771814; _ga=GA1.1.662671537.1725276444; _gcl_aw=GCL.1725276446.CjwKCAjwxNW2BhAkEiwA24Cm9MtTj1thTi4FEfM0NFWOdqoDDAhUTG5KkOYQrcJhiBrfE4v4wLbsIBoCR-QQAvD_BwE; _ga_Y1EHRSKVLJ=GS1.1.1725276445.1.0.1725276445.60.0.0; _ga_CYRVZ1HEXG=GS1.1.1725276444.1.0.1725276458.0.0.0",
-            "origin": "https://www.pinhome.id",
-            "referer": "https://www.pinhome.id/daftar?redirect=%2Flayanan%2Fpasang-iklan-gratis%3Futm_source%3Dgoogle%26utm_medium%3Dsem%26utm_campaign%3Dprimary_x_secondary_owner_conversion_listing_upload_pcw%26utm_term%3Dsupply_brand%26utm_content%3Dpinhome%26gad_source%3D1%26gclid%3DCjwKCAjwxNW2BhAkEiwA24Cm9MtTj1thTi4FEfM0NFWOdqoDDAhUTG5KkOYQrcJhiBrfE4v4wLbsIBoCR-QQAvD_BwE&redirectFrom=zone",
-            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
-            "x-auth": "Bearer 63cb746000e1f88adaede0b65928daecac1914832d5fb20538209a76ae1754ea"
-        }
-    },
-    {
-    "name": "Kitabisa",
-    "method": "post",
-    "url": "https://geni.kitabisa.com/wong/register/draft",
-    "data": "{\"full_name\":\"Lianto\",\"username\":\"target_number\",\"otp_type\":\"whatsapp\"}",
-    "headers": {
-        "Host": "geni.kitabisa.com",
-        "accept": "application/json",
-        "accept-encoding": "gzip, deflate, br, zstd",
-        "accept-language": "en-US,en;q=0.9",
-        "content-length": "71",
-        "content-type": "application/x-www-form-urlencoded",
-        "origin": "https://accounts.kitabisa.com",
+        "cookie": "_gid=GA1.2.88211451.1745398893; _gat_UA-156800171-1=1; cookieName=74d67dc9-17ac-4ee6-b7be-d628f2193f7e; _ga=GA1.2.593553564.1745398893; _ga_YM2XJJYND5=GS1.1.1745398893.1.1.1745398928.25.0.0",
+        "origin": "https://www.jumpstart.id",
         "priority": "u=1, i",
-        "referer": "https://accounts.kitabisa.com/",
+        "referer": "https://www.jumpstart.id/",
         "sec-ch-ua": "\"Google Chrome\";v=\"135\", \"Not-A.Brand\";v=\"8\", \"Chromium\";v=\"135\"",
         "sec-ch-ua-mobile": "?1",
         "sec-ch-ua-platform": "\"Android\"",
         "sec-fetch-dest": "empty",
         "sec-fetch-mode": "cors",
         "sec-fetch-site": "same-site",
-        "user-agent": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Mobile Safari/537.36",
-        "version": "3.4.0",
-        "x-ktbs-api-version": "1.0.0",
-        "x-ktbs-client-name": "kanvas",
-        "x-ktbs-client-version": "1.0.0",
-        "x-ktbs-platform-name": "kanvas",
-        "x-ktbs-request-id": "c0d06b3d-45bf-4524-a5ab-9e8babd4a20c",
-        "x-ktbs-signature": "e2157d6c726d25b9e2c19037f45503b05872430e00ecc0cd76e822ce303322de",
-        "x-ktbs-time": "1745398309"
+        "user-agent": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Mobile Safari/537.36"
     }
 }
 ]
